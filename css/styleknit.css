@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "HoneyScript";
+  src: url("../fonts/HoneyScript-Light.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "HoneyScript";
+  src: url("../fonts/HoneyScript-SemiBold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Avgardn";
+  src: url("../fonts/AVGARDN.TTF");
+}
+body{
+  background-image: url("../images/IMG_0628\ \(3\).jpg");
+  font-size: 100%;
+  color: #102738;
+}
+
+nav {
+  background-color: white;
+  font-family: "Avgardn";
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+ul {
+  background-color: white;
+  list-style-type: none;
+  float: left;
+}
+ul li{
+  float: left;
+  padding: 10px;
+  display: block;
+}
+a{ 
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #102738;
+  color: white;
+}
+
+header {
+  background-color: white;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 5%;
+}
+ header img{
+  margin-top: 5%;
+  width: 60%;
+  height: auto;
+ }
+
+
