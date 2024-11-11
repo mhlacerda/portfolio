@@ -88,7 +88,7 @@ hr{
   color: var(--cor1);
 }
 
-.botao, .botao-cv, .botao-projeto, .botao-contato{
+.botao-cv, .botao-projeto, .botao-contato{
   text-decoration: none;
   background-color: var(--cor-texto);
   color: var(--cor1);

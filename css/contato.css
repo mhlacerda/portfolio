@@ -97,28 +97,40 @@
   flex-direction: column;
   gap: 1rem;
   
-}  
-.div_form_mensagem .formulario{
-  display: flex;
-  flex-direction: column;
-}
-
-.botao:active{
-  border: 0.0675rem solid var(--cor-texto);
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-}
-.footer{
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 8% 6%;
-}
-.rodape{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
+  }  
+  .div_form_mensagem .formulario{
+    display: flex;
+    flex-direction: column;
+  }
+  .botao{
+    text-decoration: none;
+    background-color: var(--cor-texto);
+    color: var(--cor1);
+    border-radius: 49px;
+    width: 9.31rem;
+    height: 3.625rem;
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .botao:active{
+    border: 0.0675rem solid var(--cor-texto);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 8% 6%;
+  }
+  .rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 767px) and (orientation: landscape){
@@ -189,8 +201,6 @@
     display: flex;
     justify-content: space-between;
     gap: 15%;
-  
-
   }
 
   .div_textos{
@@ -202,16 +212,13 @@
     display: flex;
     gap: 10%;
     width: 100%;
-   
-   }
+  }
   .campotexto{
     border: 0.2px solid var(--cor-texto);
     color: var(--cor-texto);
     padding: 1.5%;
     background-color: transparent;
-  
   }
-  
   .div_form_mensagem{
     display: flex;
     gap: 9%;
@@ -220,7 +227,19 @@
   .div_form_mensagem .formulario{
     display: flex;
     flex-direction: column;
-  
+  }
+  .botao{
+    text-decoration: none;
+    background-color: var(--cor-texto);
+    color: var(--cor1);
+    border-radius: 49px;
+    width: 9.31rem;
+    height: 3.625rem;
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
   }
   .botao:hover{
     border: 0.0675rem solid var(--cor-texto);
