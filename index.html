@@ -4,61 +4,91 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	<title>Portfólio Manuela Lacerda</title>
 </head>
 
-<body>
-	<header class="cabecalho">
-		<div class="cabecalho-circulo">
-			<div class="circulo"></div>
-			<a class="cabecalho-nome" href="index.html"> Manuela Lacerda</a>
-	  </div>
-
-		<nav class="cabecalho-menu">
-			<a class="cabecalho-menulink" href="curriculo.html">Currículo</a>
-			<a class="cabecalho-menulink cabecalho-menulink_borda" href="projetos.html">Projetos</a>
-			<a class="cabecalho-menulink" href="contato.html">Contato</a>
-		</nav>
-</header>
+<body onresize="telaMaior()">
 	
-<main>
+		<header class="cabecalho">
+			
+			<img class="imagem_menu" onclick="clickMenu()" src="images/menu.svg" alt="Menu">
 
-	<img class="imagemIntro" src="images/manu4.jpg" alt="Imagem da Manuela Lacerda">
-	
-	<section class="introducao">
+			<menu>
+				<ul class="cabecalho-menu" id="itensMenu">
+					<li><a class="cabecalho-menulink" id="onpage" href="index.html">Home</a></li>
+					<li><a class="cabecalho-menulink" href="curriculo.html">Currículo</a></li>
+					<li><a class="cabecalho-menulink" href="projetos.html">Projetos</a></li>
+					<li><a class="cabecalho-menulink" href="contato.html">Contato</a></li>
+				</ul>
+				</menu>
+
+		</header>
 		
-		<h1 class="titulo_intro">Olá!</h1>
-		<h2 class="titulo2">Um pouco sobre mim</h2>
-		<p class="paragrafo">Sou Manuela, tenho 43 anos e sou tia de um menino que me inspira todos os dias. Recentemente, embarquei na jornada de estudar programação, uma decisão que reflete meu entusiasmo por processos criativos. Como artesã, percebo que, assim como no tricô e crochê, a programação é uma arte em constante evolução. A beleza de desmanchar e refazer algo até que fique perfeito é um valor que aprecio em ambos os mundos. Cada linha de código representa uma nova oportunidade de aprendizado, assim como cada projeto artesanal que crio. Além disso, minha experiência na organização de eventos me ensinou a importância de resolver problemas de forma criativa e a manter a calma diante de desafios. Estou animada para continuar essa jornada de aprendizado e crescimento!</p>
+		<main>
+		
+		<section class="introducao">
 
-		<div class="linkPaginas" >
-			<a class="titulo2 linkPaginas-cv" href="curriculo.html">Currículo</a>
-			<a class="titulo2 linkPaginas-projeto" href="projetos.html">Projetos</a>
-			<a class="titulo2 linkPaginas-contato" href="contato.html">Contato</a>
+			<picture>
+				<source media="(max-width: 767px)" class="imagem-pessoalMobile" srcset="images/manuela_mobile.png" alt="Imagem da Manuela Lacerda">
+				<source media="(min-width: 768px)" class="imagem-pessoalSite" srcset="images/manuela_site.png" alt="Imagem da Manuela Lacerda">
+				<img class="imagem-pessoal" src="images/manuela_site.png" alt="Imagem da Manuela Lacerda">
+			</picture>
+
+		
+				<h1 class="titulo_intro">* Olá! *</h1>
+				
+				<p class="paragrafo">Meu nome é Manuela. Minha experiência une organização de eventos, artesanato e programação, com uma abordagem criativa e focada em resultados. Ao longo de minha trajetória, encontro inspirações no cotidiano, que me impulsionam a explorar novas formas de criação e aprendizado. Vejo na programação a continuidade dos valores que aplico em minhas criações artesanais: a dedicação em aperfeiçoar cada detalhe e a paciência para refazer até alcançar o ideal. Além disso, minha experiência em organização de eventos me ensinou a importância de resolver problemas de forma criativa e de manter a calma diante dos desafios.</p>
+
+			<img class="imagem-circulo"  src="images/imagem_circulo.svg" alt="imagem de um circulo com um asterisco dentro">
+			
+
+			<div class="botao" >
+				<a class="titulo2 botao-cv" href="curriculo.html">Currículo</a>
+				<a class="titulo2 botao-projeto" href="projetos.html">Projetos</a>
+				<a class="titulo2 botao-contato" href="contato.html">Contato</a>
+			</div>
+		
+		</section>
+	</main>
+
+	<hr>
+
+	<footer class="footer">
+		<div class="rodape">
+			<h3 class="titulo3">Telefone</h3>
+			<a class="paragrafo rodape-telefone" href="https://wa.me/qr/5JIPKNEACTDIM1">(11) 99642-0730</a>
 		</div>
+		<div class="rodape">
+			<h3 class="titulo3">E-mail</h3>
+			<a class="paragrafo rodape-email" href="mailto:manuelahlacerda@gmail.com">manuelahlacerda@gmail.com</a>
+		</div>
+		<div class="rodape">
+			<p class="paragrafo">@ 2024 Por Manuela Lacerda</p>
+		</div>
+	</footer>
+
+	<script>
+		
+		function clickMenu() {
+			if (itensMenu.style.display == "block") {
+				itensMenu.style.display = "none";
+			} else {
+				itensMenu.style.display = "block";
+			}
+		}
+		
+		function telaMaior(){
+			if(window.innerWidth >= 768) {
+				itensMenu.style.display = "flex";
+			} else {
+				itensMenu.style.display = "none";
+			}
+			}
 	
-	</section>
-</main>
+	</script>
 
-<hr>
-
-<footer class="footer">
-	<div class="rodape">
-		<h3 class="titulo3">Telefone</h3>
-		<a class="paragrafo rodape-telefone" href="https://wa.me/qr/5JIPKNEACTDIM1">(11) 99642-0730</a>
-	</div>
-	<div class="rodape">
-		<h3 class="titulo3">E-mail</h3>
-		<a class="paragrafo rodape-email" href="mailto:manuelahlacerda@gmail.com">manuelahlacerda@gmail.com</a>
-	</div>
-	<div class="rodape">
-		<p class="paragrafo">@ 2024 Por Manuela Lacerda</p>
-		<p class="paragrafo">Template de insparação no <a class="site_wix" href="https://pt.wix.com/website-template/view/html/2846?originUrl=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fresumes-cvs&tpClick=view_button&esi=b9cc0e0e-7092-4fd9-949d-30d8a6de670d" target="_blank">site Wix</a></p>
-	</div>
-
-</footer>
 </body>
 </html>

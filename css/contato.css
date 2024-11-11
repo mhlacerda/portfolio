@@ -1,122 +1,251 @@
+@media only screen and (max-width: 767px){
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  body{
+    position: relative;
+    background-image: none;
+  }
+  body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 26%;
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    z-index: -1; 
+    background-image: url("../images/fundo_transparente.png");
+  }
 
-main{
-  margin: 10% 9% 0 9%;
-  display: flex;
-  justify-content: space-evenly;
-  gap: 15%;
-  box-sizing: border-box;
-}
-.titulo_intro{
-  font-size: 3rem;
-}
-.div_textos{
+  .cabecalho{
+    position: fixed;
+    background-image: none;
+  }
+  .cabecalho::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 26%;
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    z-index: -1; 
+    background-image: url("../images/fundo_transparente.png");
+  }
+  .imagem_menu {
+   padding: 0px 0px 0px 10px;
+   cursor: pointer;
+  }
+  .cabecalho-menu{
+   display: none;
+  }
+  .cabecalho-menulink{
+   font-size: 1.5rem;
+  }
+  #onpage{
+   font-size: 1.5rem;
+  }
+  .imagem-circulo{
+   display: none;
+  }
+  main {
+    padding: 80px 6% 8% 6%;;
+    display: flex;
+    flex-direction: column;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+  .texto{
+    display: flex;
+    flex-direction: column;
+  }
+  .texto .titulo2{
+    width: 100%;
+    margin: 0 0 3rem 0;
+    font-size: 1.5rem;
+  }
+  div.mobile{
+    display: none;
+  }
+  .div_textos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .div_form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  div{
+    display: flex;
+    gap: 10px;
+  }
+  .campotexto{
+    border: 0.2px solid var(--cor-texto);
+    color: var(--cor-texto);
+    padding: 1.5%;
+    background-color: transparent;
+  }
+
+  .div_form_mensagem{
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-.div_form{
-  display: flex;
-  gap: 10%;
-  width: 100%;
- 
- }
-.campotexto{
-  border: 0.2px solid var(--cor-texto);
-  color: var(--cor-texto);
-  padding: 1.5%;
-  background-color: transparent;
-
-}
-
-.div_form_mensagem{
-  display: flex;
-  gap: 9%;
-  align-items: center;
+  
 }  
 .div_form_mensagem .formulario{
   display: flex;
   flex-direction: column;
-
 }
-.botao{
-  text-decoration: none;
-  text-shadow: 0.06em 0.06em 0.06em var(--cor-texto);
-  color: var(--cor-fundo);
-  border-radius: 50%;
-  width: 8rem;
-  height: 8rem;
-  background-color: var(--cor3);
-  border: 0.5px solid var(--cor-texto);
+
+.botao:active{
+  border: 0.0675rem solid var(--cor-texto);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+.footer{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 8% 6%;
+}
+.rodape{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+}
+
+@media (max-width: 767px) and (orientation: landscape){
+
+  .cabecalho{
+    position: inherit;
+  }
 }
 
 
 
-/* Smartphones */
 
-@media (min-width: 350px) and (max-width: 767px) {
-  main {
-    margin: 30% 3% 0 3%;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-  }
-  .div_form {
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 768px) {
 
-    width: 6.65rem;
-    gap: 1.25rem;
-   }
-  .div_form_mensagem{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.25rem;
-  }
-  .mobile{
+  .imagem_menu{
     display: none;
   }
- }
+  body{
+    position: relative;
+    background-image: none;
+  }
+  body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 26%;
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    z-index: -1; 
+    background-image: url("../images/fundo_transparente.png");
+  }
 
- /* tablet*/
+  .cabecalho{
+    position: fixed;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    display: flex;
+    justify-content: center;
+    background-image: none;
+  }
+  .cabecalho::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 26%;
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    z-index: -1; 
+    background-image: url("../images/fundo_transparente.png");
+  }
+  .cabecalho-menu{
+    display: flex;
+    justify-content: center;
+  }
+  .cabecalho-menulink{
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--cor-texto);
+    border-top: 1px solid var(--cor-texto);     
+  }
 
- @media (min-width: 768px) and (max-width: 1024px) {
-    main {
-      margin: 15% 3% 0 3%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-     }
-     section{
-      margin-bottom: 5%;
-     }
-    .campotexto{
-      border: 1px solid var(--cor-texto);
-    }
-    .div_form{
-      width: 28.125rem;
-      margin-bottom: 3%;
-    }
-    .formulario{
-      margin-right: 3%;
-    }
-    .botao{
-      display: block;
-    }
 
-    }
-    /*.mobile{
-      display: none;
-  }*/
+  main{
+    padding: 10% 20% 8% 20%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15%;
+  
+
+  }
+
+  .div_textos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .div_form{
+    display: flex;
+    gap: 10%;
+    width: 100%;
+   
+   }
+  .campotexto{
+    border: 0.2px solid var(--cor-texto);
+    color: var(--cor-texto);
+    padding: 1.5%;
+    background-color: transparent;
+  
+  }
+  
+  .div_form_mensagem{
+    display: flex;
+    gap: 9%;
+    align-items: center;
+  }  
+  .div_form_mensagem .formulario{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .botao:hover{
+    border: 0.0675rem solid var(--cor-texto);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+  }
+
+  
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 3% 6%;
+  }
+  .rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+} 
+
+/*Extra large devices (large laptops and desktops, 1200px and up)*/
+@media screen and (min-width: 1400px) {
+  main {
+    padding: 10% 20% 8% 20%;
+  }
+ 
 }
-

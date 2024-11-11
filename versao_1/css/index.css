@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main{
+  margin: 5% 9% 0 9%;
+  display: flex;
+  align-items: center;
+  gap: 15%;
+}
+.imagemIntro{
+  width: 30%;
+  border-radius: 100%;
+}
+
+.introducao{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+}
+.titulo_intro{
+  margin: 10% 0;
+}
+.linkPaginas{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  gap: 1rem;
+  margin: 10% 0;
+  width: 100%;
+}  
+.linkPaginas-cv, .linkPaginas-projeto, .linkPaginas-contato{
+  text-decoration: none;
+  text-shadow: 0.06em 0.06em 0.06em var(--cor-texto);
+  color: var(--cor-fundo);
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  vertical-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linkPaginas-cv{
+  background-color: var(--cor1);
+}
+.linkPaginas-projeto{
+  background-color: var(--cor2);
+}
+.linkPaginas-contato{
+  background-color: var(--cor3);
+}
+.linkPaginas-cv:hover, .linkPaginas-projeto:hover, .linkPaginas-contato:hover{
+  border: 0.0675rem solid var(--cor-texto);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  text-shadow:0 0 0;
+}
+
+
+/* Smartphones */
+
+@media (min-width: 350px) and (max-width: 767px) {
+  main {
+   display: block;
+   margin: 30% 3% 0 3%;
+}
+  .imagemIntro{
+    display: block;
+    margin: auto;
+    width: 50%;
+   }
+  .introducao{
+   width: 100%;
+  }
+  .linkPaginas{
+    gap: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .linkPaginas.titulo2{
+    width: 80%;
+  }
+  .linkPaginas-cv, .linkPaginas-projeto, .linkPaginas-contato{
+    padding: 0 0.56rem;
+    
+  }
+  .linkPaginas-cv:active, .linkPaginas-projeto:active, .linkPaginas-contato:active{
+    border: 0.0675rem solid var(--cor-texto);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    text-shadow:0 0 0;
+  }
+}

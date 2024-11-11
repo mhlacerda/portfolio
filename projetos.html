@@ -4,47 +4,49 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/projetos.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	<title>Portfólio Manuela Lacerda</title>
 </head>
-<body>
-	<header class="cabecalho">
-		<div class="cabecalho-circulo">
-			<div class="circulo"></div>
-			<a class="cabecalho-nome" href="index.html"> Manuela Lacerda</a>
-	  </div>
-		<nav class="cabecalho-menu">
-			<a class="cabecalho-menulink" href="curriculo.html">Currículo</a>
-			<a class="cabecalho-menulink cabecalho-menulink_borda" id="onpage" href="projetos.html">Projetos</a>
-			<a class="cabecalho-menulink" href="contato.html">Contato</a>
-		</nav>
-</header>
 
-<body>
+<body onresize="telaMaior()">
+
+	<header class="cabecalho">
+
+		<img class="imagem-circulo"  src="images/imagem_circulo_claro.svg" alt="imagem de um circulo com um asterisco dentro">
+		<img class="imagem_menu" onclick="clickMenu()" src="images/menu_claro.svg" alt="Menu">
+		<menu>
+			<ul class="cabecalho-menu" id="itensMenu">
+				<li><a class="cabecalho-menulink" href="index.html">Home</a></li>
+				<li><a class="cabecalho-menulink" href="curriculo.html">Currículo</a></li>
+				<li><a class="cabecalho-menulink" id="onpage" href="projetos.html">Projetos</a></li>
+				<li><a class="cabecalho-menulink" href="contato.html">Contato</a></li>
+			</ul>
+			</menu>
+
+		
+	</header>
 
 	<main>
 		<h1 class="titulo_intro">Projetos</h1>
 			
-		<section>
-			<div class="div_textos">
-				<h3 class="titulo3">Projeto 1</h3>
-				<p class="paragrafo">Em breve!</p>
+		<section class="cards">
+			<div class="card_projeto">
+				<img class="imagem_projeto" src="images/site_v1.png" alt="imagem">
+				<h3 class="titulo3">Site pessoal</h3>
+				<p class="paragrafo">Primeira versãp deste portfólio. Feito somente com Html e CSS.</p>
+				<a class="link_projeto" href="https://mhlacerda.github.io/portfolio/versao1/index.html">* Veja aqui *</a>
 			</div>
-			<a class="link_imagemProjeto"  href="index.html"><img class="imagemProjeto" src="images/work-in-progress.png" alt="imagem da pagina inicial desse sie"> </a>
-		</section>
+		
 
-		<div class="linha"></div>
-
-		<section>
-			<div class="div_textos">
-				<h3 class="titulo3">Projeto 2</h3>
-				<p class="paragrafo">Em breve!</p>
+			<div class="card_projeto">
+				<img class="imagem_projeto" src="images/landingpage.png" alt="imagem de um computador">
+				<h3 class="titulo3">Landing Pages</h3>
+				<p class="paragrafo">Programação de landing pages através de modelos de designs</p>
+				<a class="link_projeto" href="https://mhlacerda.github.io/landing_pages/">* Veja aqui *</a>
 			</div>
-			<a class="link_imagemProjeto"  href="index.html"><img class="imagemProjeto" src="images/wip.jpg" alt="imagem de um computador"></a>
-		</section>
-
+		</section>	
 	</main>
 
 
@@ -61,9 +63,29 @@
 	</div>
 	<div class="rodape">
 		<p class="paragrafo">@ 2024 Por Manuela Lacerda</p>
-		<p class="paragrafo">Template de insparação no <a class="site_wix" href="https://pt.wix.com/website-template/view/html/2846?originUrl=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fresumes-cvs&tpClick=view_button&esi=b9cc0e0e-7092-4fd9-949d-30d8a6de670d" target="_blank">site Wix</a></p>
 	</div>
 
 </footer>
+
+<script>
+		
+	function clickMenu() {
+		if (itensMenu.style.display == "block") {
+			itensMenu.style.display = "none";
+		} else {
+			itensMenu.style.display = "block";
+		}
+	}
+	
+	function telaMaior(){
+		if(window.innerWidth >= 768) {
+			itensMenu.style.display = "flex";
+		} else {
+			itensMenu.style.display = "none";
+		}
+		}
+
+</script>
+
 </body>
 </html>
