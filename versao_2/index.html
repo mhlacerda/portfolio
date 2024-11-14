@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<title>Portfólio Manuela Lacerda</title>
+</head>
+
+<body onresize="telaMaior()">
+	
+		<header class="cabecalho">
+			
+			<img class="imagem_menu" onclick="clickMenu()" src="images/menu.svg" alt="Menu">
+
+			<menu>
+				<ul class="cabecalho-menu" id="itensMenu">
+					<li><a class="cabecalho-menulink" id="onpage" href="index.html">Home</a></li>
+					<li><a class="cabecalho-menulink" href="curriculo.html">Currículo</a></li>
+					<li><a class="cabecalho-menulink" href="projetos.html">Projetos</a></li>
+					<li><a class="cabecalho-menulink" href="contato.html">Contato</a></li>
+				</ul>
+				</menu>
+
+		</header>
+		
+		<main>
+		
+		<section class="introducao">
+
+			<picture>
+				<source media="(max-width: 767px)" class="imagem-pessoalMobile" srcset="images/manuela_mobile.png" alt="Imagem da Manuela Lacerda">
+				<source media="(min-width: 768px)" class="imagem-pessoalSite" srcset="images/manuela_site.png" alt="Imagem da Manuela Lacerda">
+				<img class="imagem-pessoal" src="images/manuela_site.png" alt="Imagem da Manuela Lacerda">
+			</picture>
+
+		
+				<h1 class="titulo_intro">* Olá! *</h1>
+				
+				<p class="paragrafo">Meu nome é Manuela. Minha experiência une organização de eventos, artesanato e programação, com uma abordagem criativa e focada em resultados. Ao longo de minha trajetória, encontro inspirações no cotidiano, que me impulsionam a explorar novas formas de criação e aprendizado. Vejo na programação a continuidade dos valores que aplico em minhas criações artesanais: a dedicação em aperfeiçoar cada detalhe e a paciência para refazer até alcançar o ideal. Além disso, minha experiência em organização de eventos me ensinou a importância de resolver problemas de forma criativa e de manter a calma diante dos desafios.</p>
+
+			<img class="imagem-circulo"  src="images/imagem_circulo.svg" alt="imagem de um circulo com um asterisco dentro">
+			
+
+			<div class="botao" >
+				<a class="titulo2 botao-cv" href="curriculo.html">Currículo</a>
+				<a class="titulo2 botao-projeto" href="projetos.html">Projetos</a>
+				<a class="titulo2 botao-contato" href="contato.html">Contato</a>
+			</div>
+		
+		</section>
+	</main>
+
+	<hr>
+
+	<footer class="footer">
+		<div class="rodape">
+			<h3 class="titulo3">Telefone</h3>
+			<a class="paragrafo rodape-telefone" href="https://wa.me/qr/5JIPKNEACTDIM1">(11) 99642-0730</a>
+		</div>
+		<div class="rodape">
+			<h3 class="titulo3">E-mail</h3>
+			<a class="paragrafo rodape-email" href="mailto:manuelahlacerda@gmail.com">manuelahlacerda@gmail.com</a>
+		</div>
+		<div class="rodape">
+			<p class="paragrafo">@ 2024 Por Manuela Lacerda</p>
+		</div>
+	</footer>
+
+	<script>
+		
+		function clickMenu() {
+			if (itensMenu.style.display == "block") {
+				itensMenu.style.display = "none";
+			} else {
+				itensMenu.style.display = "block";
+			}
+		}
+		
+		function telaMaior(){
+			if(window.innerWidth >= 768) {
+				itensMenu.style.display = "flex";
+			} else {
+				itensMenu.style.display = "none";
+			}
+			}
+	
+	</script>
+
+</body>
+</html>

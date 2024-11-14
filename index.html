@@ -4,71 +4,200 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 768px)">
+	<link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 767px)">
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-	<title>Portfólio Manuela Lacerda</title>
+	<title>Manuela Lacerda</title>
 </head>
 
 <body onresize="telaMaior()">
 	
-		<header class="cabecalho">
-			
-			<img class="imagem_menu" onclick="clickMenu()" src="images/menu.svg" alt="Menu">
+	<header class="cabecalho">
 
-			<menu>
-				<ul class="cabecalho-menu" id="itensMenu">
-					<li><a class="cabecalho-menulink" id="onpage" href="index.html">Home</a></li>
-					<li><a class="cabecalho-menulink" href="curriculo.html">Currículo</a></li>
-					<li><a class="cabecalho-menulink" href="projetos.html">Projetos</a></li>
-					<li><a class="cabecalho-menulink" href="contato.html">Contato</a></li>
-				</ul>
-				</menu>
+		<img class="imagem_menu" onclick="clickMenu()" src="images/menu_claro.svg" alt="Menu">
 
-		</header>
-		
-		<main>
-		
-		<section class="introducao">
-
-			<picture>
-				<source media="(max-width: 767px)" class="imagem-pessoalMobile" srcset="images/manuela_mobile.png" alt="Imagem da Manuela Lacerda">
-				<source media="(min-width: 768px)" class="imagem-pessoalSite" srcset="images/manuela_site.png" alt="Imagem da Manuela Lacerda">
-				<img class="imagem-pessoal" src="images/manuela_site.png" alt="Imagem da Manuela Lacerda">
-			</picture>
-
-		
-				<h1 class="titulo_intro">* Olá! *</h1>
+		<div class="cabecalho-circulo">
+			<img class="imagem-circulo"  src="images/imagem_circulo_claro.svg" alt="imagem de um circulo com um asterisco dentro">
+			<p class="cabecalho-nome">Manuela Lacerda</p>
+		</div>
 				
-				<p class="paragrafo">Meu nome é Manuela. Minha experiência une organização de eventos, artesanato e programação, com uma abordagem criativa e focada em resultados. Ao longo de minha trajetória, encontro inspirações no cotidiano, que me impulsionam a explorar novas formas de criação e aprendizado. Vejo na programação a continuidade dos valores que aplico em minhas criações artesanais: a dedicação em aperfeiçoar cada detalhe e a paciência para refazer até alcançar o ideal. Além disso, minha experiência em organização de eventos me ensinou a importância de resolver problemas de forma criativa e de manter a calma diante dos desafios.</p>
-
-			<img class="imagem-circulo"  src="images/imagem_circulo.svg" alt="imagem de um circulo com um asterisco dentro">
+		
 			
+		<menu>
+			<ul class="cabecalho-menu" id="itensMenu">
+				<li><a class="cabecalho-menulink" href="#home" id="onpage">Home</a></li>
+				<li><a class="cabecalho-menulink" href="#curriculo">Currículo</a></li>
+				<li><a class="cabecalho-menulink" href="#projetos">Projetos</a></li>
+				<li><a class="cabecalho-menulink" href="#contato">Contato</a></li>
+			</ul>
+		</menu>
 
-			<div class="botao" >
-				<a class="titulo2 botao-cv" href="curriculo.html">Currículo</a>
-				<a class="titulo2 botao-projeto" href="projetos.html">Projetos</a>
-				<a class="titulo2 botao-contato" href="contato.html">Contato</a>
+	</header>
+		
+	<main>
+		
+		<section class="introducao" id="home">
+			<h1 class="titulo_intro">Olá, sou Manuela Lacerda</h1>
+			<h2 class="titulo2">Organizdora de eventos, artesã e estudante de programação</h2>
+			<div class="scrolldown">
+				<img class="seta" src="images/seta_rosa.svg">
+				<a href="#sobremim" class="paragrafo "> mais sobre mim</a>
+			</div>
+		</section>
+
+		<section class="sobremim" >
+
+				<div class="titulo_sobremim">
+				<div class="bolinha"></div>
+				<h1 class="titulo_intro">Sobre</h1>
+				<h3 class="titulo3">Um pouco da minha trajetória</h3>
 			</div>
 		
+
+			<div class=" colorido" id="sobremim">
+				<p class="paragrafo">Meu nome é Manuela. Minha experiência une organização de eventos, artesanato e estudo em programação, com uma abordagem criativa e focada em resultados. Ao longo de minha trajetória, encontro inspirações no cotidiano, que me impulsionam a explorar novas formas de criação e aprendizado. Vejo na programação a continuidade dos valores que aplico em minhas criações artesanais: a dedicação em aperfeiçoar cada detalhe e a paciência para refazer até alcançar o ideal. Além disso, minha experiência em organização de eventos me ensinou a importância de resolver problemas de forma criativa e de manter a calma diante dos desafios.</p>
+				<a href="#curriculo" class="paragrafo scrolldown">Experiência</a>
+			</div>
+
 		</section>
+
+		<section class="skills">
+
+			<div class="titulo_skills">
+				<h2 class="titulo2">Habilidades e Conhecimentos</h2>
+				<div class="bolinha"></div>
+				<div class="bolinha"></div>
+			</div>
+
+			<div class="div_skills">
+				<p class="card_skill_1 paragrafo">Sou proativa, responsável e comprometida. Minha maior habilidade é <strong>resolver problemas e lidar com imprevistos</strong>, sempre buscando soluções práticas e criativas para garantir que o trabalho seja realizado com qualidade e dentro dos prazos.</p>
+				<p class="card_skill_2 paragrafo"><strong>HTML</strong> e <strong>CSS</strong> básico e JavaScript iniciante.</p>
+				<p class="card_skill_3 paragrafo">Experiencia internacional com curso de imersão em Inglês no The Language Center of Ireland (proficiência intermediaria).</p>
+			</ul>
+		</section>
+
+
+		<section class="curriculo"  >
+
+			
+			<img id="curriculo" class="imagem-circulo-curriculo"  src="images/imagem_circulo_rosa_fundo.svg" alt="imagem de um circulo com um asterisco dentro">
+			<h2 class="titulo2">Experiência e Educação</h2>
+
+			<div class="div_curriculo">
+
+
+				<div class="div_experiencia">
+
+					<div class="experiencia">
+						<h3 class="titulo3">Analista de eventos sênior no Sebrae-SP</h3>
+						<p class="paragrafo">Fui responsável pela gestão completa do Espaço do Colaborador na Feira do Empreendedor 2023, realizada pelo Sebrae-SP. Minhas atribuições incluíram o contato e a coordenação com fornecedores, a supervisão da operação durante os dias do evento e o acompanhamento das atividades no pós-evento. Além disso, desenvolvi um sistema para a inscrição dos colaboradores na escala de trabalho da feira, garantindo uma organização eficaz e uma experiência positiva para todos os envolvidos.</p>
+					</div>
+					<div class="experiencia">
+						<h3 class="titulo3">Gerente de eventos na Capital Aberto</h3>
+						<p class="paragrafo">Contribuí para o crescimento de aproximadamente 80% na quantidade de eventos realizados pela empresa, atuando como responsável por todo o setor. Minhas atividades incluíram o controle financeiro e de orçamento, a venda de ingressos via e-commerce (com inclusão de novos produtos, ajustes necessários e monitoramento de vendas), a criação de calendário anual e a gestão de todos os processos operacionais dos eventos. Estruturei processos específicos para cada tipo de evento realizado pela empresa e participei como suporte essencial na implementação do novo sistema da empresa (Tivel).</p>
+					</div>
+					<div class="experiencia">
+						<h3 class="titulo3">Analista sênior no Grupo Bar Brahma</h3>
+						<p class="paragrafo">Durante cinco anos, fui responsável pelo receptivo do Camarote Bar Brahma em São Paulo, recebendo, em média, de 3.000 a 4.000 pessoas por noite de evento. Fui responsável pelo gerenciamento completo do espaço do receptivo, incluindo a coordenação de equipes próprias (recepção) e terceirizadas (customização, maquiagem e transporte), além de fornecer suporte à equipe de alimentos e bebidas. No pré-evento, gerenciei o controle de vendas de ingressos, utilizando planilhas financeiras e implementando medidas contra fraudes.</p>
+						<p class="paragrafo">Além disso, participei como trainee nos restaurantes do grupo, passando por todos os setores da empresa, desde a cozinha até a diretoria, o que me proporcionou uma visão ampla e aprofundada dos processos operacionais de uma organização.</p>
+					</div>
+				</div>
+
+				<div class="div_educacao">
+
+					<div class="educacao">
+						<div class="bolinha"></div>
+						<h3 class="titulo3">Gerenciando o Desenvolvimento de Produtos</h3>
+						<p class="paragrafo">Curso feito na FGV - Programa de Educação Continuada (FGV-PEC). Concluído em dezembro de 2009.</p>
+					</div>
+					<div class="educacao">
+						<div class="bolinha"></div>
+						<h3 class="titulo3">Pós graduação em Primeira Gerência com ênfase em Marketing</h3>
+						<p class="paragrafo">Curso feito na ESPM. Concluído em dezembro de 2007</p>
+					</div>
+					<div class="educacao">
+						<div class="bolinha"></div>
+						<h3 class="titulo3">Graduação em Ciências Biológicas</h3>
+						<p class="paragrafo">Curso feito na Universidade Presbiteriana Mackenzie. Concluído em dezembro de 2003.</p>
+					</div>
+				</div>		
+
+			</div>
+			
+			<div class="div_linkedin">
+				<img class="imagem_linkedin" src="images/linkedin.svg" alt="logo linkedin">
+				<a class="linkedin"  href="https://www.linkedin.com/in/manuelalacerda" target="_blank">  Veja meu currículo completo</a>
+			</div>
+		</section>
+
+
+		<section class="projetos" id="projetos">
+
+			<div class="titulo_projetos">
+				<div class="bolinha"></div>
+				<div class="bolinha"></div>
+				<h1 class="titulo_intro">Projetos</h1>
+				<div class="bolinha"></div>
+				<div class="bolinha"></div>
+			</div>
+
+			<div class="cards">
+				<div class="card_projeto">
+					<img class="imagem_projeto" src="images/site_v2.png" alt="imagem">
+					<h3 class="titulo3">Website pessoal</h3>
+					<p class="paragrafo">Segunda opção para o site pessoal. Foi projetado com foco em mobile first, adaptando-se depois para telas maiores.</p>
+					<a class="link_projeto" href="https://mhlacerda.github.io/portfolio/versao_2/index.html" target="_blank">* Veja aqui *</a>
+				</div>
+
+				<div class="card_projeto">
+					<img class="imagem_projeto" src="images/landingpage.png" alt="imagem de um computador">
+					<h3 class="titulo3">Landing Pages</h3>
+					<p class="paragrafo">Programação de landing pages através de modelos de designs</p>
+					<a class="link_projeto" href="https://mhlacerda.github.io/landing_pages/" target="_blank">* Veja aqui *</a>
+				</div>
+
+							
+				<div class="card_projeto">
+					<img class="imagem_projeto" src="images/site_v1.png" alt="imagem">
+					<h3 class="titulo3">Site pessoal primeira versão</h3>
+					<p class="paragrafo">Primeira versão deste portfólio. Feito somente com Html e CSS.</p>
+					<a class="link_projeto" href="https://mhlacerda.github.io/portfolio/versao_1/index.html" target="_blank">* Veja aqui *</a>
+				</div>
+			</div>	
+
+			<img class="imagem-circulo-linha"  src="images/imagem_circulo_claro.svg" alt="imagem de um circulo com um asterisco dentro">
+		</section>
+
 	</main>
 
-	<hr>
+	<footer class="footer" id="contato">
 
-	<footer class="footer">
-		<div class="rodape">
-			<h3 class="titulo3">Telefone</h3>
-			<a class="paragrafo rodape-telefone" href="https://wa.me/qr/5JIPKNEACTDIM1">(11) 99642-0730</a>
+		<div class="div_rodape">
+			<div class="rodape">
+				<img class="imagem_telefone" src="images/telephone.svg" alt="telefone">
+				<a class="paragrafo rodape-telefone" href="https://wa.me/qr/5JIPKNEACTDIM1" target="_blank">(11) 99642-0730</a>
+			</div>
+		
+
+			<div class="rodape">
+				<img class="imagem_email" src="images/icon-email.svg" alt="icone de e-mail">
+				<a class="paragrafo rodape-email" href="mailto:manuelahlacerda@gmail.com">manuelahlacerda@gmail.com</a>
+			</div>
 		</div>
-		<div class="rodape">
-			<h3 class="titulo3">E-mail</h3>
-			<a class="paragrafo rodape-email" href="mailto:manuelahlacerda@gmail.com">manuelahlacerda@gmail.com</a>
-		</div>
-		<div class="rodape">
-			<p class="paragrafo">@ 2024 Por Manuela Lacerda</p>
-		</div>
-	</footer>
+
+
+	<div class="rodape">
+		<a class="paragrafo" href="https://www.linkedin.com/in/manuelalacerda"target="_blank"><img class="imagem_linkedin" src="images/linkedin_branco.svg" alt="icone do linkedin"></a>
+	
+
+		<a class="paragrafo" href="https://github.com/mhlacerda" target="_blank"><img class="imagem_github" src="images/github.svg" alt="icone do GitHub"></a>
+	</div>
+
+	<div class="rodape_textos">
+		<p class="paragrafo">@ 2024 Por Manuela Lacerda</p>
+		<p class="paragrafo">Foto de <a href="https://unsplash.com/pt-br/@majidvj?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Majid Gheidarlou</a> na <a href="https://unsplash.com/pt-br/fotografias/parede-com-sombra-de-arvore-qpwyoo2nDTw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+	</div>
+</footer>
 
 	<script>
 		
