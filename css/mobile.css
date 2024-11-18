@@ -45,8 +45,7 @@
     font-family: var(--fonte-paragrafo);
     font-size: 1rem;
     line-height: 1.3rem;
-    text-align: justify;
-  } 
+   } 
 
 
   /* Cabeçalho */
@@ -141,6 +140,7 @@
     background-color: var(--cor-detalhes);
     padding: 1.5rem 1rem;
     position: relative;
+    gap: 1rem;
   }
   .colorido > .scrolldown{
     border: 2px solid var(--branco);
@@ -148,6 +148,13 @@
     font-weight: 700;
   } 
   .colorido > .paragrafo{
+    color: var(--branco);
+    text-align: left;
+  }
+  .colorido > .paragrafo > a{
+    color: var(--branco);
+  }
+  .colorido > .paragrafo > a:visited{
     color: var(--branco);
   }
 
@@ -187,7 +194,6 @@
   }
   .card_skill_2{
     flex: 1;
-    text-align: center;
   }
   .card_skill_3{
     flex: 3;

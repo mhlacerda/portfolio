@@ -44,7 +44,7 @@
     font-family: var(--fonte-paragrafo);
     font-size: 1rem;
     line-height: 1.3rem;
-    text-align: justify;
+
   } 
 
 
@@ -175,6 +175,13 @@
     color: var(--branco);
     width: 80%;
   }
+  .colorido > .paragrafo > a{
+    color: var(--branco);
+    text-align: left;
+  }
+  .colorido > .paragrafo > a:visited{
+    color: var(--branco);
+  }
   .colorido > .scrolldown{
     border: 2px solid var(--branco);
     width: fit-content;
@@ -211,16 +218,16 @@
     border: 1px solid var(--cor-textocinza);
     padding: 2rem;
     border-radius: 50px;
+    
   }
   .card_skill_1{
     flex: 3;
   }
   .card_skill_2{
     flex: 1;
-    text-align: center;
   }
   .card_skill_3{
-    flex: 3;
+    flex: 2;
   }
 
 
@@ -252,6 +259,7 @@
   .educacao > .paragrafo{
     color: var(--cor-textoescuro);
     font-size: 0.8rem;
+    width: 10rem;
   }
   .experiencia > .titulo3{
     color: var(--cor-textoclaro);
@@ -332,8 +340,8 @@
     background-color: var(--cor-textoescuro);
     display: flex;
     flex-direction: column;
-    gap: 1.25em;
-    width: 300px;
+    gap: 1.25rem;
+    max-width: 18.75rem;
   }
   .imagem_projeto{
     border-radius: 15px;
