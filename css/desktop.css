@@ -313,6 +313,14 @@
   .linkedin:hover{
     color: var(--cor-textoescuro);
   }
+  .relatorio{
+    color: var(--branco);
+    text-decoration: underline;
+  }
+  .relatorio:hover {
+    color: var(--cor-detalhes);
+  }  
+
 
 
   /* Quinta seção - Projetos */
