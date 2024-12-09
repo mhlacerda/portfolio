@@ -302,41 +302,45 @@
     padding: 0 1rem;
     color: var(--cor-textoclaro);
   }
-  .cards{
-    display: flex;
-    gap: 4rem;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  .swiper-button-prev, .swiper-button-next{
+    display: none;
   }
-  .card_projeto {
+  .swiper-pagination{
+    font-family: var(--fonte-titulo);
+    font-size: 0.8rem;
+    color: var(--cor-textoclaro);
+    position: absolute;
+    top: 90%;
+    
+  }
+  .swiper{
+    height: 31.25rem;
+    
+  }
+  .swiper-slide {
     border-radius: 30px;
     background-color: var(--cor-textoescuro);
-    display: flex;
-    flex-direction: column;
-    gap: 1.25em;
-    width: 300px;
+    height: 25rem;
+    text-align: center;
+    align-content: center;
   }
-  .imagem_projeto{
-    border-radius: 30px;
-    opacity: 0.9;
-  }
-  .card_projeto > .titulo3{
+
+  .swiper-slide > .titulo3{
     color: var(--cor-detalhes);
-    width: 100%;
-    padding: 1rem;
+    padding: 1.5rem;
     font-size: 1.5rem;
   }
-  .card_projeto > .paragrafo{
+  .swiper-slide > .paragrafo{
     color: var(--cor-textoclaro);
-    padding: 0 2rem;
+    padding: 2rem 2rem;
   }
-  .link_projeto{
+  .swiper-slide > .link_projeto{
     text-decoration: none;
     font-family: var(--fonte-titulo);
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
-    padding: 0rem 0.625rem 2rem 0.625rem;
+    padding: 3rem 0.625rem 2rem 0.625rem;
     color: var(--cor-detalhes);
     cursor: pointer;
   }

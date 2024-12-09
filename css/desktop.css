@@ -329,7 +329,7 @@
     background-color: var(--cor-fundo);
   }
   .titulo_projetos{
-    padding: 3% 0;
+    padding: 5% 0;
     display: flex;
     align-items: center;
   }
@@ -337,41 +337,45 @@
     padding: 0 1rem;
     color: var(--cor-textoclaro);
   }
-  .cards{
-    display: flex;
-    gap: 4rem;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
+  .swiper-button-prev, .swiper-button-next{
+    color: var(--cor-textoclaro);
   }
-  .card_projeto {
-    border-radius: 15px;
-    background-color: var(--cor-textoescuro);
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    max-width: 18.75rem;
-  }
-  .imagem_projeto{
-    border-radius: 15px;
-    opacity: 0.9;
-  }
-  .card_projeto > .titulo3{
-    color: var(--cor-detalhes);
-    width: 100%;
+  .swiper-pagination{
+    font-family: var(--fonte-titulo);
+    font-size: 1rem;
+    color: var(--cor-textoclaro);
+    position: absolute;
+    top: 90%;
     padding: 1rem;
+  }
+  .swiper{
+    height: 23rem;
+  }
+  .swiper-slide{
+    border: 1px solid var(--cor-textocinza);
+    border-radius: 25px;
+    height: 20rem;
+    text-align: center;
+    align-content: center;
+
+  }
+  .swiper-slide > .titulo3{
+    color: var(--cor-detalhes);
+    padding: 1.5rem;
     font-size: 1.5rem;
   }
-  .card_projeto > .paragrafo{
+  .swiper-slide > .paragrafo{
     color: var(--cor-textoclaro);
-    padding: 0 2rem;
+    padding: 2rem 2rem;
   }
-  .link_projeto{
+  .swiper-slide > .link_projeto{
     text-decoration: none;
     font-family: var(--fonte-titulo);
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
-    padding: 0rem 0.625rem 2rem 0.625rem;
+    padding: 3rem 0.625rem 2rem 0.625rem;
     color: var(--cor-detalhes);
     cursor: pointer;
   }
