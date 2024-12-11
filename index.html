@@ -153,11 +153,9 @@
 				<div class="bolinha"></div>
 			</div>
 
-			<div class="swiper" navigation="true">
+			<div class="swiper">
 				<!-- Additional required wrapper -->
-								<!-- If we need pagination -->
-				<div class="swiper-pagination"></div>
-	
+				
 				<div class="swiper-wrapper">
 						<!-- Slides -->
 					<div class="swiper-slide">
@@ -177,7 +175,8 @@
 					</div>
 			
 				</div>
-				 
+				
+				<div class="swiper-pagination"></div>
 	
 				<!-- If we need navigation buttons -->
 				<div class="swiper-button-prev"></div>
@@ -243,11 +242,15 @@
 	
     const swiper = new Swiper('.swiper', {
       spaceBetween: 20,
-      slidesPerView: 1.1,
+      slidesPerView: 1.18,
       pagination: {
         el: ".swiper-pagination",
         type: "fraction",
-      }
+      },
+			navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 
     });
   </script>

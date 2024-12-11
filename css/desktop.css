@@ -339,18 +339,19 @@
   }
 
   .swiper-button-prev, .swiper-button-next{
+    display: block;
     color: var(--cor-textoclaro);
   }
+
   .swiper-pagination{
     font-family: var(--fonte-titulo);
     font-size: 1rem;
     color: var(--cor-textoclaro);
-    position: absolute;
-    top: 90%;
-    padding: 1rem;
+    position: relative;
+    padding: 3rem;
   }
   .swiper{
-    height: 23rem;
+    width: 60%;
   }
   .swiper-slide{
     border: 1px solid var(--cor-textocinza);
