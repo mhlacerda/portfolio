@@ -16,8 +16,7 @@
   --fonte-paragrafo: "Raleway", serif;
 }
 
-
-@media only screen and (max-width: 767px){
+@media screen and (max-width: 900px){
 
   
   /* Configurações Gerais */
@@ -66,6 +65,7 @@
     padding-left: 1rem;
     list-style-type: none;
     display: none;
+    width: auto;
   }
   .cabecalho-menulink{
     text-decoration: none;
@@ -73,10 +73,12 @@
     font-size: 1.2rem;
     font-family: var(--fonte-paragrafo);
     padding: 0 0.5rem;
+    line-height: 2rem;
   }
   .cabecalho-menulink:hover{
     color: var(--cor-textocinza);
   }
+
 
 
   /* Primeira seção - Introdução */
@@ -177,27 +179,26 @@
   }
   .div_skills > .paragrafo{
     color: var(--cor-textocinza);
-  }
-  .div_skills{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-  }
-  .card_skill_1, .card_skill_2, .card_skill_3{
     border: 1px solid var(--cor-textocinza);
     padding: 1.5rem;
     border-radius: 30px;
   }
-  .card_skill_1{
-    flex: 3;
+  .div_skills{
+    display: grid;
+    grid-template-columns: repeat(3, 18.75rem);
+    gap: 0.5rem;
+    overflow: scroll;
   }
-  .card_skill_2{
-    flex: 1;
+  .div_skills::-webkit-scrollbar{
+    height: 0.5rem;
   }
-  .card_skill_3{
-    flex: 3;
+  .div_skills::-webkit-scrollbar-thumb{
+    background-color: var(--cor-textoclaro);
+    border-radius: 0.5rem;
   }
+  .card_skill_1, .card_skill_2, .card_skill_3{
+    margin-bottom: 1rem;
+  } 
 
 
   /* Quarta seção - Curriculo */
@@ -233,21 +234,39 @@
   .experiencia > .titulo3{
     color: var(--cor-textoclaro);
     margin-bottom: 1rem;
+
   }
   .experiencia > .paragrafo{
     color: var(--cor-textoclaro);
+    flex-grow: 1;
   }
   .div_curriculo{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1 auto;
     gap: 3rem;
   }
+  .div_experiencia{
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    gap: 0.5rem;
+    overflow: scroll;
+  }
+  .experiencia::-webkit-scrollbar{
+    height: 0.5rem;
+  }
+   .experiencia::-webkit-scrollbar-thumb{
+    background-color: var(--cor-textoclaro);
+    border-radius: 0.5rem;
+   }
   .experiencia{
     background-color: var(--cor-textoescuro);
     margin-bottom: 5%;
-    padding: 1.5rem;
-    border-radius: 50px;     
+    padding: 2rem;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;     
   }
+  
   .div_educacao{
     margin-left: 2rem;
     display: flex;
@@ -255,7 +274,6 @@
     gap: 1rem;
     border-left: 1px solid var(--cor-textoescuro);
     padding-left: 1rem;
-    order: -1;
   }
   .educacao{
      margin-top: 5%;
@@ -265,7 +283,7 @@
     gap: 0.7rem;
     align-items: center;
     justify-content: center;
-    margin: 5%;
+    margin: 15% 5% 5% 5%;
   }
   .linkedin{
     font-family: var(--fonte-paragrafo);
@@ -302,50 +320,55 @@
     padding: 0 1rem;
     color: var(--cor-textoclaro);
   }
-  .swiper-button-prev, .swiper-button-next{
-    display: none;
+  .div_projetos{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: ;
+    gap: 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
-  .swiper-pagination{
-    font-family: var(--fonte-titulo);
-    font-size: 0.8rem;
-    color: var(--cor-textoclaro);
-    position: absolute;
-    top: 90%;
-    
+  .div_projetos::-webkit-scrollbar{
+    height: 0.5rem;
   }
-  .swiper{
-    height: 31.25rem;
-    
-  }
-  .swiper-slide {
-    border-radius: 30px;
+   .div_projetos::-webkit-scrollbar-thumb{
+    background-color: var(--cor-textoclaro);
+    border-radius: 0.5rem;
+   }
+  .projeto-slide {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
     background-color: var(--cor-textoescuro);
-    height: 25rem;
-    text-align: center;
-    align-content: center;
+    width: 16rem;
+    padding: 1.125rem;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: .5rem;
   }
-
-  .swiper-slide > .titulo3{
+  .imagem_projeto{
+    width: 13.75rem;
+    height: 12.81rem;
+    border-radius: 15px;
+    filter: brightness(0.8);
+  }
+  .projeto-slide > .titulo3{
     color: var(--cor-detalhes);
-    padding: 1.5rem;
     font-size: 1.5rem;
   }
-  .swiper-slide > .paragrafo{
+  .projeto-slide > .paragrafo{
     color: var(--cor-textoclaro);
-    padding: 2rem 2rem;
+    text-align: left;
   }
-  .swiper-slide > .link_projeto{
+  .projeto-slide > .link_projeto{
     text-decoration: none;
     font-family: var(--fonte-titulo);
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
-    padding: 3rem 0.625rem 2rem 0.625rem;
     color: var(--cor-detalhes);
     cursor: pointer;
   }
-
-
   .imagem-circulo-linha{
       width: 60px;
       height: 60px;

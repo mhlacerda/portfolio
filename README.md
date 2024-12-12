@@ -11,7 +11,7 @@ https://mhlacerda.github.io/portfolio
 
 * CSS
 
-* Flex-box
+* Flexbox
 
 * Grid
 
