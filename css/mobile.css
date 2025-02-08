@@ -8,8 +8,8 @@
   --cor-fundo: #0D0B0B;
   --cor-textoescuro: #252126;
   --cor-textocinza: #8C7672;
-  --cor-textoclaro: #D9C4BF;
-  --cor-detalhes: #C18280;
+  --cor-textoclaro: rgb(217, 196, 191);
+  --cor-detalhes: rgb(193, 130, 128);
   --branco: #fff;
 
   --fonte-titulo: "Bodoni Moda", serif;
@@ -323,7 +323,6 @@
   .div_projetos{
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: ;
     gap: 1rem;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -335,7 +334,7 @@
     background-color: var(--cor-textoclaro);
     border-radius: 0.5rem;
    }
-  .projeto-slide {
+  .projeto-card {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -345,22 +344,26 @@
     gap: 1.5rem;
     align-items: center;
     margin-bottom: .5rem;
+    box-sizing: border-box;
   }
   .imagem_projeto{
-    width: 13.75rem;
-    height: 12.81rem;
+    width: 100%;
+    max-width: 13.75rem;
+    height: 100%;
+    max-height: 12.81rem;
     border-radius: 15px;
     filter: brightness(0.8);
+    box-shadow: 8px 8px 24px rgba(193, 130, 128, 0.8);
   }
-  .projeto-slide > .titulo3{
+  .projeto-card > .titulo3{
     color: var(--cor-detalhes);
     font-size: 1.5rem;
   }
-  .projeto-slide > .paragrafo{
+  .projeto-card > .paragrafo{
     color: var(--cor-textoclaro);
     text-align: left;
   }
-  .projeto-slide > .link_projeto{
+  .projeto-card > .link_projeto{
     text-decoration: none;
     font-family: var(--fonte-titulo);
     font-size: 1.5rem;
