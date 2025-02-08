@@ -359,7 +359,10 @@
     color: var(--cor-detalhes);
     font-size: 1.5rem;
   }
-  .projeto-card > .paragrafo{
+   .projeto-card ul{
+    padding: 1rem;
+  }
+  .projeto-card > .paragrafo, li{
     color: var(--cor-textoclaro);
     text-align: left;
   }

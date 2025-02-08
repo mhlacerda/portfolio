@@ -44,7 +44,6 @@
     font-family: var(--fonte-paragrafo);
     font-size: 1rem;
     line-height: 1.3rem;
-
   } 
 
 
@@ -366,7 +365,6 @@
   }
   .imagem_projeto{
     width: 13.75rem;
-    height: 12.81rem;
     border-radius: 15px;
     filter: brightness(0.8);
     box-shadow: 8px 8px 24px rgba(193, 130, 128, 0.8);
@@ -375,7 +373,10 @@
     color: var(--cor-detalhes);
     font-size: 1.5rem;
   }
-  .projeto-card > .paragrafo{
+  .projeto-card ul{
+    padding: 1rem;
+  }
+  .projeto-card > .paragrafo, li{
     color: var(--cor-textoclaro);
     text-align: left;
   }
