@@ -4,14 +4,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/mobile.css">
-	<link rel="stylesheet" href="css/desktop.css">
+	<link rel="stylesheet" href="./css/mobile.css">
+	<link rel="stylesheet" href="./css/desktop.css">
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<script src="https://kit.fontawesome.com/bd5b4eec63.js" crossorigin="anonymous"></script>
 	<title>Manuela Lacerda</title>
 </head>
 
 <body onresize="telaMaior()">
-	
+
 	<header class="cabecalho">
 
 		<img class="imagem_menu" onclick="clickMenu()" src="images/menu_claro.svg" alt="Menu">
@@ -149,10 +150,16 @@
 				<div class="bolinha"></div>
 			</div>
 
-			<div class="div_projetos">
+			
 
+			<button class="seta-direita"><i class="fa-solid fa-forward"></i></button>
+			<button class="seta-esquerda"><i class="fa-solid fa-backward"></i></button>
+	
+
+			<div class="div_projetos">
+					
 				<div class="projeto-card">
-					<img class="imagem_projeto" src="images/mundopet.png" alt="imagem do projeto">
+					<img class="imagem_projeto" src="./images/mundopet.png" alt="imagem do projeto">
 					<h3 class="titulo3">Projeto Mundo Pet</h3>
 					<p class="paragrafo">Projeto feito nas aulas sobre JavaScript: entendendo Promise e async/await da Alura. </p>
 					<ul>
@@ -166,6 +173,8 @@
 					<a class="link_projeto" href="https://mhlacerda.github.io/alura/mundoPet/" target="_blank">* Veja aqui *</a>
 					<a class="link_projeto" href="https://github.com/mhlacerda/alura/tree/main/mundoPet" target="_blank">* Veja no GitHub*</a>
 				</div>
+
+				
 				
 				<div class="projeto-card">
 					<img class="imagem_projeto" src="images/alurabooks.png" alt="imagem do projeto">
@@ -173,8 +182,8 @@
 					<p class="paragrafo">Projeto feito nas aulas da Alura onde uma página responsiva do site da Alura Books foi criada usando HTML, CSS e uma biblioteca de JavaScript (carrossel)</p>
 					<a class="link_projeto" href="https://mhlacerda.github.io/alura/projeto_alurabooks" target="_blank">* Veja aqui *</a>
 					<a class="link_projeto" href="https://github.com/mhlacerda/alura/tree/main/projeto_alurabooks" target="_blank">* Veja no GitHub*</a>
-
 				</div>
+
 				<div class="projeto-card">
 					<img class="imagem_projeto" src="images/site_v2.png" alt="imagem do projeto">
 					<h3 class="titulo3">Website pessoal</h3>
@@ -187,8 +196,8 @@
 					<p class="paragrafo">Primeira versão deste portfólio. Feito somente com HTML e CSS.</p>
 					<a class="link_projeto" href="https://mhlacerda.github.io/portfolio/versao_1/index.html" target="_blank">* Veja aqui *</a>
 				</div>
-		
-			</div>
+		</div>
+
 				
 			<img class="imagem-circulo-linha"  src="images/imagem_circulo_claro.svg" alt="imagem de um circulo com um asterisco dentro">
 		</section>

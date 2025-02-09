@@ -327,6 +327,7 @@
   .projetos{
     padding: 0 10% 0% 10%;
     background-color: var(--cor-fundo);
+    position: relative;
   }
   .titulo_projetos{
     padding: 5% 0;
@@ -341,33 +342,34 @@
     display: grid;
     grid-auto-flow: column;
     gap: 1rem;
-    overflow-x: scroll;
+    overflow-x: scroll; 
     overflow-y: hidden;
+    padding-bottom: 1rem;
   }
   .div_projetos::-webkit-scrollbar{
-    height: 0.5rem;
+    height: 0.09rem;
   }
    .div_projetos::-webkit-scrollbar-thumb{
     background-color: var(--cor-textoclaro);
-    border-radius: 0.5rem;
    }
   .projeto-card {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
     background-color: var(--cor-textoescuro);
-    width: 100%;
-    max-width: 30rem;
+    width: 20rem;
+    height: 36rem;
     padding:2rem;
     gap: 1.5rem;
     align-items: center;
     margin-bottom: .5rem;
   }
+
   .imagem_projeto{
     width: 13.75rem;
     border-radius: 15px;
     filter: brightness(0.8);
-    box-shadow: 8px 8px 24px rgba(193, 130, 128, 0.8);
+    box-shadow: 8px 8px 24px rgba(94, 54, 53, 0.8);
   }
   .projeto-card > .titulo3{
     color: var(--cor-detalhes);
@@ -397,16 +399,35 @@
       margin-top: 6%;
   }
 
-
+  .seta-esquerda, .seta-direita {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    z-index: 100;
+  }
+  .seta-esquerda { 
+    left: 5%;
+  }
+  .seta-direita { 
+    right: 5%; 
+  }
+  .fa-backward, .fa-forward{
+    color: var(--cor-detalhes);
+    font-size: 1.5rem; 
+  }
 
   /*RODAPÉ*/
   .footer{
     background-color: var(--cor-detalhes);
     padding: 6% 0% 2% 0%;
-    display: flex;
     gap: 2rem;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
   }
   .imagem_telefone{
     width: 1.2rem;

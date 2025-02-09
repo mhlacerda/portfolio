@@ -24,4 +24,14 @@ linksMenu.forEach(link => {
 });
 
 
+const container = document.querySelector(".div_projetos");
+const btnEsquerda = document.querySelector(".seta-esquerda");
+const btnDireita = document.querySelector(".seta-direita");
 
+btnEsquerda.addEventListener("click", () => {
+    container.scrollBy({ left: -300, behavior: "smooth" }); // Rola para a esquerda
+});
+
+btnDireita.addEventListener("click", () => {
+    container.scrollBy({ left: 300, behavior: "smooth" }); // Rola para a direita
+});
